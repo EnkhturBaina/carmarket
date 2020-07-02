@@ -1,0 +1,59 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-header> -->
+  <!-- <ion-card style="height: 218px;border-radius: 18px;">
+    <ion-slides class="slide-padding" pager="true">
+      <ion-slide *ngFor="let story of topStories">
+        <div class="container">
+          <ion-img src="{{story.picture}}" style="margin-top: 15px;"></ion-img>
+        </div>
+        <h2>
+          <span>{{story.title}}</span>
+        </h2>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+  <div class="sub-headers">
+    <p>Санал болгох</p>
+  </div> -->
+  <ion-content fullscreen class="ion-padding" scroll-y="false">
+    <ion-item lines='none'>
+      <ion-button size="small" slot="end" style="margin: 0px;" class="btn" fill="outline" (click)="skip()">
+        Алгасах
+      </ion-button>
+    </ion-item>
+    <ion-slides style="height: 80%;" pager="true" #slides>
+      <ion-slide>
+        <div class="slide">
+          <img src="https://dev.veritech.mn/storage/uploads/process/file_1583988296562212_15813863674511.jpg"/>
+          <h2>Зээлийн маркет гэж юу вэ ? </h2>
+          <p>Зах зээлийн судалгаа нь бүтээгдэхүүн, үйлчилгээний шинж чанар, нийлүүлэлтийн байдал, бизнесийн нөхцөл боломж болон худалдан авалтын шийдвэр гаргалтын тухай мэдээллийг цуглуулах тасралтгүй үйл ажиллагаа юм.</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="https://dev.veritech.mn/storage/uploads/process/file_1583988296562212_15813863674511.jpg"/>
+        <h2>What is Ionic?</h2>
+        <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="https://dev.veritech.mn/storage/uploads/process/file_1583988296562212_15813863674511.jpg"/>
+        <h2>What is Ionic Appflow?</h2>
+        <p><b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/iamges/slidelast.png"/>
+        <h2>Үйлчилгээний нөхцөл</h2>
+        <ion-button fill="clear" (click)="skip()">Үргэлжлүүлэх <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+      </ion-slide>
+      
+
+    </ion-slides>
+    <ion-button (click)="continue(slides)" expand="block">
+      Үргэлжлүүлэх
+    </ion-button>
+    <!-- <ion-butto></ion-butto> -->
+</ion-content>

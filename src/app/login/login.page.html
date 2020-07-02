@@ -1,0 +1,76 @@
+<ion-content >
+  <!-- <div class="form1">
+   
+  </div>
+  <div>
+   
+ </div>
+   <div class="form2">
+     <p style="text-align: center;">Бүртгүүлж амжаагүй юу ? <span style="color: #091f44">Бүртгүүлэх</span></p>
+   </div> -->
+<!-- <div class="form1">
+</div>
+  <ion-card>
+    <ion-card-content>
+      <ion-label style="margin-left: 14px;">
+        Утасны дугаар
+      </ion-label>
+      <ion-item color="transparent" class="item-color" lines='none'>
+        <ion-input placeholder="Нэвтрэх нэр" [(ngModel)]="username" class="username"></ion-input>
+      </ion-item>
+      <ion-label style="margin-left: 14px;">
+        Нууц үг
+      </ion-label>
+      <ion-item color="transparent" class="item-color" lines='none'>
+        <ion-input placeholder="Нууц үг" [(ngModel)]="password" class="username" type="password"></ion-input>
+      </ion-item>
+      <ion-item lines="none" style="width: 60%; display: block; margin: auto;" color="transparent">
+        <ion-label class="rememberme">Нууц үг санах</ion-label>
+        <ion-toggle [(ngModel)]=rememberMe (ionChange)="RememberME()"></ion-toggle>
+      </ion-item>
+      <ion-button expand="block" class="login-btn" (click)="login()">
+        <span class="text">Нэвтрэх</span>
+      </ion-button> 
+    </ion-card-content>
+  </ion-card> -->
+  <div class="form1">
+  <img  style="text-align: center;display:block;
+  margin:auto;height: 230px;" src="../../assets/iamges/slidelast.png">
+
+  </div>
+  <div class="form2">
+    <ion-card>
+      <ion-card-content>
+        <ion-label style="margin-left: 20px;font-weight: bold;
+        font-size: 16px;">
+          Утасны дугаар
+        </ion-label>
+        <ion-item  class="item-color" lines='none'>
+          <ion-input style="background: white;" placeholder="Утасны дугаар" [(ngModel)]="username" class=""></ion-input>
+        </ion-item>
+        <ion-label style="margin-left: 20px;font-weight: bold;
+        font-size: 16px;">
+          Нууц үг
+        </ion-label>
+        <ion-item  class="item-color" lines='none'>
+          <ion-input style="background: white;" placeholder="Нууц үг" [(ngModel)]="password" class="" type="password"></ion-input>
+        </ion-item>
+        
+        <ion-button style="width: 72%;
+        --background: #3880ff;
+        margin: 20px;
+        --border-radius: 13px;
+        margin-right: 0px;" class="login-btn" (click)="login()">
+          <span class="text">Нэвтрэх</span>
+        </ion-button> 
+        <ion-button (click)="finger()" style="color: transparent;" fill="outline">
+          <ion-icon name="finger-print-outline"style="color: #3880ff"></ion-icon>
+        </ion-button>
+      </ion-card-content>
+    <p style="text-align: center;">Бүртгүүлж амжаагүй юу ? <span style="color: #091f44" (click)="register()">Бүртгүүлэх</span></p>
+
+    </ion-card> 
+
+  </div>
+  
+  </ion-content>

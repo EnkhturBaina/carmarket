@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Үйлчилгээний нөхцөл</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <h4 style="text-align: center;
+  font-weight: bold;">ЗЭЭЛИЙН ДИЖИТАЛ МАРКЕТ</h4>
+  <!-- <img src="http://digitalcredit.mn/assets/dcredit/img/favicon.png"> -->
+  <div style="margin-top: 64x;">
+  <p style="margin-left: 10px;">1. Зээлийн хүсэлтээ бүртгүүл.</p>
+  <p style="margin-left: 10px;">2. Банкуудад хүсэлт илгээ.</p>
+  <p style="margin-left: 10px;">3. Хүссэн зээлээ сонго.</p>
+</div>
+<ion-item>
+  <ion-checkbox slot="start" (click)="agree(isAgree)" [(ngModel)]="isAgree"></ion-checkbox>
+  <ion-label>Зөвшөөрч байна.</ion-label>
+</ion-item>
+<div class="buttons">
+  <ion-button class="btn" (click)="back()" size="small" fill="outline" >Буцах</ion-button>
+    <ion-button class="btn1" (click)="continue()" size="small" size="small" [disabled]="disabled" >Үргэлжлүүлэх</ion-button>
+  </div>
+</ion-card>
+</ion-content>

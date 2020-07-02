@@ -1,0 +1,73 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>history</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-segment [(ngModel)]="segment">
+  <ion-segment-button value="1">Зээл</ion-segment-button>
+  <ion-segment-button value="2">Санал болгосон</ion-segment-button>
+</ion-segment>
+<div [ngSwitch]="segment">
+  <div *ngSwitchCase="'1'">
+<ion-list>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://lh3.googleusercontent.com/XdgGl-1W5nsU5vl-qyq1QaaHifnq-SgEh6Dh_DdJ4hEtMfGSgjpQIkOq7Ly3zfG3zA8">
+    </ion-avatar>
+    <ion-label >
+      <h2>Toyota Land Cruiser</h2>
+      <h3>200,000,000₮</h3>
+      <p >Төлөгдсөн</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://lh3.googleusercontent.com/XdgGl-1W5nsU5vl-qyq1QaaHifnq-SgEh6Dh_DdJ4hEtMfGSgjpQIkOq7Ly3zfG3zA8">
+    </ion-avatar>
+    <ion-label >
+      <h2>Toyota Land Cruiser</h2>
+      <h3>40,000,000₮</h3>
+      <p >Төлөгдөж байгаа</p>
+    </ion-label>
+   
+  </ion-item>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://lh3.googleusercontent.com/KYQyVTgP4ZV60gxNOsKYssScNe17NMgHpO_nRY4WRBYj_4YTZ0e8t6zwh38sTFmyCco">
+    </ion-avatar>
+    <ion-label >
+      <h2>AVPLAY 15,6 INCH LAPTOP</h2>
+      <h3>40,000,000₮</h3>
+      <p >Хүлээгдэж буй</p>
+    </ion-label>
+   
+  </ion-item>
+</ion-list>
+</div>
+<div *ngSwitchCase="'2'">
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://lh3.googleusercontent.com/XdgGl-1W5nsU5vl-qyq1QaaHifnq-SgEh6Dh_DdJ4hEtMfGSgjpQIkOq7Ly3zfG3zA8">
+      </ion-avatar>
+      <ion-label >
+        <h2>Toyota Land Cruiser</h2>
+        <h3>200,000,000₮</h3>
+        <p >Зарагдсан</p>
+      </ion-label>
+    </ion-item>
+  
+    
+  </ion-list>
+  
+  <ion-fab  vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button class="fab"(click)="search()">
+      <ion-icon name="add" ></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  </div>
+</div>
+</ion-content>

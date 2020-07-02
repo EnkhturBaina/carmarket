@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Түрээсийн хүсэлт</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">Эхлэх огноо</ion-label>
+        <ion-datetime displayFormat="MM/DD/YYYY"  value="2020-04-05"></ion-datetime>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">Дуусах огноо</ion-label>
+        <ion-datetime displayFormat="MM/DD/YYYY"  value="2020-04-05" (ionChange)="updateMyDate($event)"></ion-datetime>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <div *ngIf="booleanData">
+    <div class="slide">
+      <img height="150px" style="text-align: center;"
+        src="https://dev.veritech.mn/storage/uploads/process/file_1583988436201627_15813863674511.png" />
+
+    </div>
+    <ion-item>
+      <ion-label>1 өдрийн 200,000₮</ion-label>
+      
+    </ion-item>
+    <ion-item>
+      <ion-label>Өдөрт 200км явах</ion-label>
+      
+    </ion-item>
+    <ion-item>
+      <ion-label>1км хэтрэх тутам 750₮</ion-label>
+      
+    </ion-item>
+    <ion-item>
+      <ion-label>Тээврийн хэрэгслийн даатгалтай.</ion-label>
+      
+    </ion-item>
+
+<ion-item>
+      <ion-label>Түрээсийн хугацаа</ion-label>
+      <ion-label>2020/04/05 - 2020/04/10</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" style="font-weight: bold;">Нийт дүн</ion-label>
+      <ion-label color="primary" style="font-weight: bold;font-size: 18px;">1,200,000₮</ion-label>
+    </ion-item>
+    <ion-button expand="block" style="margin: 10px;" (click)="order()">Захиалах</ion-button>
+
+  </div>
+  
+  
+    
+</ion-content>

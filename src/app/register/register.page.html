@@ -1,0 +1,44 @@
+<ion-content >
+  <div class="form1">
+  <img height="300px" style="text-align: center;display:block;
+  margin:auto;" src="../../assets/iamges/slidelast.png">
+
+  </div>
+  <div class="form2">
+    <ion-card style="margin-top: 40px;
+    border-radius: 18px;
+    height: 382px;
+    margin-left: 0px;
+    margin-right: 0px;
+    --background: #e3e7ee;">
+      <ion-card-content>
+        <ion-label style="margin-left: 16px;font-weight: bold;
+        font-size: 16px;">
+          Утасны дугаар
+        </ion-label>
+        <ion-item  class="item-color" lines='none'>
+          <ion-input placeholder="Утасны дугаар" [(ngModel)]="username" class="username"></ion-input>
+        </ion-item>
+        <ion-label style="margin-left: 16px;font-weight: bold;
+        font-size: 16px;">
+          Нууц үг
+        </ion-label>
+        <ion-item class="item-color" lines='none'>
+          <ion-input placeholder="Нууц үг" [(ngModel)]="password" class="username" type="password"></ion-input>
+        </ion-item>
+        <ion-label style="margin-left: 16px;font-weight: bold;
+        font-size: 16px;">
+          Нууц үг давтах
+        </ion-label>
+        <ion-item  class="item-color" lines='none'>
+          <ion-input  [(ngModel)]="password" class="username" type="password"></ion-input>
+        </ion-item>
+        <ion-button expand="block" class="login-btn" (click)="register()">
+          <span class="text">Бүртгүүлэх</span>
+        </ion-button> 
+      </ion-card-content>
+    </ion-card> 
+
+  </div>
+  
+  </ion-content>

@@ -1,0 +1,137 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Вэндор
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+    <img class="ven-image"
+      src="data:image/png;base64,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">
+    <ion-label>
+      <ion-label style="font-weight: bold;margin-left: 8px;">МӨНХХАДА</ion-label>
+      <ion-rating style="
+        --star-color: gray;
+        --star-color-filled: orange;
+        display: inline-block;" rate="5" readonly="false" size="small" (rateChange)="onRateChange($event)">
+      </ion-rating>
+    </ion-label>
+    <a href="tel:{{mobileNumber}}" slot="end">
+      <p class="text-color">88608512</p>
+    </a>
+  </ion-item>
+  <ion-item>
+    <img class="ven-image" src="https://www.coolmarketing.mn/wp-content/uploads/2015/08/tavanbogd.jpg">
+    <ion-label>
+    <ion-label style="font-weight: bold;
+  margin-left: 8px;">ТАВАН БОГД ХХК</ion-label>
+    <ion-rating style="
+  --star-color: gray;
+  --star-color-filled: orange;
+  display: inline-block;" rate="5" readonly="false" size="small" (rateChange)="onRateChange($event)">
+    </ion-rating>
+  </ion-label>
+    <a href="tel:{{mobileNumber}}" slot="end">
+      <p class="text-color">88608512</p>
+    </a>
+  </ion-item>
+  <ion-item>
+    <img class="ven-image"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjl4cZgtZ9Ep3imifYsEKljg2tmNmGuYTzz0FIMJdNw-cRsmTl&usqp=CAU">
+      <ion-label>
+    <ion-label style="font-weight: bold;
+    margin-left: 8px;">БАВАРИА МОТОРС ХХК</ion-label>
+    <ion-rating style="
+    --star-color: gray;
+    --star-color-filled: orange;
+    display: inline-block;" rate="4" readonly="false" size="small" (rateChange)="onRateChange($event)">
+    </ion-rating>
+  </ion-label>
+    <a href="tel:{{mobileNumber}}" slot="end">
+      <p class="text-color">88608512</p>
+    </a>
+  </ion-item>
+  <ion-item>
+    <img class="ven-image"
+      src="https://news.mn/wp-content/archive1/biznes/photo/2014/1/ff1000775663f0ef/cc9a66226d318848original.jpg">
+    <ion-label>
+    <ion-label style="font-weight: bold;
+    margin-left: 8px;">МОННИС МОТОРС ХХК </ion-label>
+    <ion-rating style="
+    --star-color: gray;
+    --star-color-filled: orange;
+    display: inline-block;" rate="3" readonly="false" size="small" (rateChange)="onRateChange($event)">
+    </ion-rating>
+  </ion-label>
+    <a href="tel:{{mobileNumber}}" slot="end">
+      <p class="text-color">88608512</p>
+    </a>
+  </ion-item>
+  <ion-item>
+    <img class="ven-image" src="https://pbs.twimg.com/profile_images/708154020678905857/k7N4C-9g_400x400.jpg">
+  <ion-label>
+    <ion-label style="font-weight: bold;
+  margin-left: 8px;">КИА МОТОРС</ion-label>
+  <ion-rating style="
+  --star-color: gray;
+  --star-color-filled: orange;
+  display: inline-block;" rate="3" readonly="false" size="small" (rateChange)="onRateChange($event)">
+  </ion-rating>
+</ion-label>
+    <a href="tel:{{mobileNumber}}" slot="end">
+      <p class="text-color">88608512</p>
+    </a>
+  </ion-item>
+  <ion-item>
+    <img class="ven-image"
+      src="data:image/png;base64,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">
+    <ion-label>
+    <ion-label style="font-weight: bold;
+    margin-left: 8px;">МСМ ГРҮҮП</ion-label>
+    <ion-rating style="
+    --star-color: gray;
+    --star-color-filled: orange;
+    display: inline-block;" rate="3" readonly="false" size="small" (rateChange)="onRateChange($event)">
+    </ion-rating>
+  </ion-label>
+    <a href="tel:{{mobileNumber}}" slot="end">
+      <p class="text-color">88608512</p>
+    </a>
+  </ion-item>
+  <ion-item>
+    <img class="ven-image" src="https://motors.nomin.mn/fb.jpg">
+  <ion-label>
+    <ion-label style="font-weight: bold;
+  margin-left: 8px;">ЭЙЧ ЭНД ЭЙЧ ХХК</ion-label>
+  <ion-rating style="
+  --star-color: gray;
+  --star-color-filled: orange;
+  display: inline-block;" rate="2" readonly="false" size="small" (rateChange)="onRateChange($event)">
+  </ion-rating>
+</ion-label>
+    <a href="tel:{{mobileNumber}}" slot="end">
+      <p class="text-color">88608512</p>
+    </a>
+  </ion-item>
+  <ion-item>
+    <img class="ven-image" src="https://www.bestofmongolia.mn/uploads/organization/2019-11/5dda6e509cde6.jpeg">
+  <ion-label>
+    <ion-label style="font-weight: bold;
+  margin-left: 8px;">НОМИН МОТОРС ХХК </ion-label>
+  <ion-rating style="
+  --star-color: gray;
+  --star-color-filled: orange;
+  display: inline-block;" rate="2" readonly="false" size="small" (rateChange)="onRateChange($event)">
+  </ion-rating>
+</ion-label>
+    <a href="tel:{{mobileNumber}}" slot="end">
+      <p class="text-color">88608512</p>
+    </a>
+  </ion-item>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button class="fab" (click)="map()">
+      <ion-icon name="location-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

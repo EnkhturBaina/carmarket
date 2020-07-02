@@ -1,0 +1,100 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Дэлгэрэнгүй</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content style="--background : #79a7f7;">
+  <ion-item lines='none' color="transparent">
+    <!-- <ion-button slot="start" (click)="back()" style="--background : transparent;"> -->
+      <ion-icon slot="start" (click)="back()" name="chevron-back-outline"></ion-icon>
+    <!-- </ion-button> -->
+    <!-- <ion-button slot="end" (click)="save()" style="--background : transparent;"> -->
+      <ion-icon slot="end" (click)="save()" [name]="icon"></ion-icon>
+    <!-- </ion-button> -->
+  </ion-item>
+  <h1 style="margin-top: 0px;text-align: center;">Toyota Land Cruiser</h1>
+  <ion-slides pager="true">
+    
+    <ion-slide>
+      <div class="slide">
+        <img height="150px"
+          src="https://dev.veritech.mn/storage/uploads/process/file_1583988436201627_15813863674511.png" />
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <img height="150px"
+          src="https://dev.veritech.mn/storage/uploads/process/file_1583988436882668_15813863674701.png" />
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide">
+        <img height="150px"
+          src="https://dev.veritech.mn/storage/uploads/process/file_1583988436201627_15813863674511.png" />
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+  <ion-card style="margin-bottom: 0px;
+  margin-top: 47px;
+  border-radius: 18px;
+  height: 60%;
+  margin-right: 0px;
+  margin-left: 0px;">
+    <ion-item>
+      <ion-label class="key">Үйлдвэрлэсэн он</ion-label>
+      <ion-label class="value">2004 он</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="key">Арлын дугаар</ion-label>
+      <ion-label class="value">гжцүгж</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="key">Монголд орж ирсэн</ion-label>
+      <ion-label class="value">2004 он</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="key">Хөдөлгүүр</ion-label>
+      <ion-label class="value">Дизель</ion-label>
+    </ion-item>
+    <img style="width: 14px;
+    margin-left: 92%;
+    margin-top: 4px;" (click)="readMore()" src="../../assets/icon/arrow.svg">
+    <!-- <ion-buttons>
+      <ion-button color="primary">Хүсэлт илгээх</ion-button>
+      <ion-button (click)="openMenu()" color="primary">Хуваалцах</ion-button>
+    </ion-buttons> -->
+    <div style="margin-top: 8%;margin-left: 3%;margin-right: 3%;">
+      <ion-row>
+        <ion-col size="1.5"></ion-col>
+        <ion-col size="3">
+          <div style="text-align:  center!important;">
+          <ion-button class="btn" (click)="loanrequest()" size="small">
+            <ion-icon name="document-outline"></ion-icon>
+          </ion-button>
+          <p class="btn-text">Зээлийн хүсэлт</p>
+        </div>
+        </ion-col>
+        <ion-col size="3">
+          <div style="text-align:  center!important;">
+          <ion-button class="btn" (click)="rent()" size="small">
+            <ion-icon name="send-outline"></ion-icon>
+          </ion-button>
+          <p class="btn-text">Түрээслэх</p>
+          </div>
+        </ion-col>
+        <ion-col size="3" (click)="openMenu()">
+          <div style="text-align:  center!important;">
+          <ion-button class="btn" (click)="qrpop()" size="small">
+            <ion-icon name="share-outline"></ion-icon>
+          </ion-button>
+          <p class="btn-text">Хуваалцах</p>
+          </div>
+        </ion-col>
+        <ion-col size="1.5"></ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+
+</ion-content>

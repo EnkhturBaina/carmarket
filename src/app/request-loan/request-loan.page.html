@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Зээлийн хүсэлт</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h3 style="text-align: center;">Хас банкинд хүсэлт илгээх бол доорх мэдээллийн бөглөнө үү </h3>
+<ion-item>
+  <ion-label position="stacked">Зээлийн төрөл</ion-label>
+  <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+    <ion-select-option value="brown">Автомашин</ion-select-option>
+    <ion-select-option value="blonde">Цахилгаан бараа</ion-select-option>
+    <ion-select-option value="black">Гэр ахуйн бараа</ion-select-option>
+    <ion-select-option value="red">Гоо сайхан</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label position="stacked">Зээлийн хэмжээ</ion-label>
+  <ion-input placeholder="₮"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="stacked">Хугацаа/сараар/</ion-label>
+  <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+    <ion-select-option value="brown">3 сар</ion-select-option>
+    <ion-select-option value="blonde">3 сар</ion-select-option>
+    <ion-select-option value="black">3 сар</ion-select-option>
+    <ion-select-option value="red">3 сар</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label position="stacked">Зээлийн зориулалт</ion-label>
+  <ion-textarea placeholder="Дэлгэрэнгүй бичнэ үү"></ion-textarea>
+
+</ion-item>
+<ion-button style="margin: 20px;--border-radius : 15px;" expand="block" (click)="send()">Илгээх</ion-button>
+</ion-content>

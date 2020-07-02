@@ -1,0 +1,160 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Профайл</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="content">
+  <!-- <ion-item color="transparent" lines='none'> -->
+  <div style="text-align: center;margin-top: 14px;">
+
+    <ion-avatar class="image-center">
+      <img
+        src="https://scontent.fuln2-1.fna.fbcdn.net/v/t1.0-9/p960x960/30594766_849042005295873_2514959439233024000_o.jpg?_nc_cat=107&_nc_sid=7aed08&_nc_ohc=OWfBPl9Nl68AX8CkLj3&_nc_ht=scontent.fuln2-1.fna&_nc_tp=6&oh=95ffd5a4b00087a2b640049bc6c5d4f4&oe=5EAFF66E">
+    </ion-avatar>
+    <ion-button style="margin-left: 84%; margin-top: -21%;--background : transparent;" (click)="settings($event)" >
+      <ion-icon name="settings-outline" color="white"></ion-icon>
+    </ion-button>
+
+    <h3 style="color:white; margin: 0px;padding: 0px;">Б. Энхмаа</h3>
+    <ion-row>
+      <ion-col size="2">
+
+      </ion-col>
+      <ion-col size="4">
+        <p style="color:rgb(172, 163, 163); margin: 0px;padding: 0px;">Оноо</p>
+        <p>50</p>
+      </ion-col>
+      <ion-col size="4">
+        <p style="color:rgb(172, 163, 163); margin: 0px;padding: 0px;">Хувь</p>
+        <p>0.6%</p>
+      </ion-col>
+      <ion-col size="2">
+
+      </ion-col>
+
+    </ion-row>
+
+  </div>
+  <!-- </ion-item> -->
+<!-- <ion-segment>
+  <ion-segment-button>erer</ion-segment-button>
+  <ion-segment-button>rerer</ion-segment-button>
+  <ion-segment-button>reer</ion-segment-button>
+</ion-segment> -->
+  <!-- <ion-segment [(ngModel)]="segment" class="segment" type="reset">
+    <ion-segment-button value="1" ngSelected="selected" class="disactive">
+      <ion-label class="seg-label">Хувийн мэдээлэл</ion-label>
+    </ion-segment-button>
+    <ion-segment-button checked value="2" class="disactive">
+      <ion-label class="seg-label">Орлогын мэдээлэл</ion-label>
+    </ion-segment-button>
+  </ion-segment> -->
+  <ion-card style="border-radius: 16px;margin-right: 0px;margin-left: 0px;height: 89%;">
+    
+    <ion-segment [(ngModel)]="segment" class="segment" type="reset">
+      <ion-segment-button value="1" ngSelected="selected" class="disactive">
+        <ion-label class="seg-label">Хувийн мэдээлэл</ion-label>
+      </ion-segment-button>
+      <ion-segment-button checked value="2" class="disactive">
+        <ion-label class="seg-label">Орлогын мэдээлэл</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <div [ngSwitch]="segment">
+      <div *ngSwitchCase="'1'">
+        <p style="text-align: center;">Та мэдээллээ дараах аргаар татах боломжтой. </p>
+        <div class="buttons">
+          <ion-button class="btn" (click)="readFinger()"><ion-icon name="finger-print-outline" ></ion-icon>
+          </ion-button>
+            <ion-button class="btn" (click)="takePhoto()">
+              <ion-icon name="card-outline" ></ion-icon>
+            </ion-button>
+            <ion-button class="btn3" (click)="create()">
+              <ion-icon name="create-outline" ></ion-icon>
+            </ion-button>
+          </div>
+          <div *ngIf="boolean">
+        <ion-item>
+          <ion-label position="stacked">Овог</ion-label>
+          <ion-input required="true" [(ngModel)]="lastname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Нэр</ion-label>
+          <ion-input [(ngModel)]="firstname"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Хаяг</ion-label>
+          <ion-input [(ngModel)]="address"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Утасны дугаар</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Ажилласан жил</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Гэрлэсэн эсэх</ion-label>
+          <ion-checkbox color="primary" checked="true"></ion-checkbox>
+        </ion-item>
+        <ion-button expand="block" class="save" fill="outline">Хадгалах</ion-button>
+
+      </div>
+      </div>
+      <div *ngSwitchCase="'2'">
+        <ion-item>
+          <ion-label position="stacked">Орлогын эх үүсвэр</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Сарын цэвэр орлого</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Өрхийн нийт орлого</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Зээлийн нийт төлбөр</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item lines='none'>
+          <ion-label position="stacked">Харьцдаг банк</ion-label>
+        </ion-item>
+        
+        <ion-row>
+          <ion-col size="2"></ion-col>
+          <ion-col size="2" (click)="loan()">
+            <img height="52px"
+              src="data:image/jpeg;base64,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"
+              alt="">
+          </ion-col>
+          <ion-col size="2">
+            <img height="52px"
+              src="https://lh3.googleusercontent.com/XdgGl-1W5nsU5vl-qyq1QaaHifnq-SgEh6Dh_DdJ4hEtMfGSgjpQIkOq7Ly3zfG3zA8"
+              alt="">
+
+          </ion-col>
+          <ion-col>
+            <img height="52px"
+              src="https://lh3.googleusercontent.com/KYQyVTgP4ZV60gxNOsKYssScNe17NMgHpO_nRY4WRBYj_4YTZ0e8t6zwh38sTFmyCco"
+              alt="">
+
+          </ion-col>
+
+          <ion-col size="2">
+            <img height="52px" src="https://sporturult.mn/wp-content/uploads/2017/06/golomt-logo-300x300.jpg" alt="">
+          </ion-col>
+          <ion-col size="2"></ion-col>
+        </ion-row>
+        <ion-button expand="block" fill="outline" class="btn">Хадгалах</ion-button>
+
+
+      </div>
+    </div>
+  </ion-card>
+
+</ion-content>

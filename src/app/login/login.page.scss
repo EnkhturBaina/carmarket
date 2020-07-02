@@ -1,0 +1,123 @@
+// .login {
+//   margin-top: 40px;
+//   padding-left: 40px;
+//   padding-right: 40px;
+//   .input-list {
+//     margin-top: 40px;
+//     .icons {
+//       color: #ccc;
+//       height: 30px;
+//       width: 30px;
+//       padding: 5px 15px 5px 0px;
+//     }
+//     ion-item {
+//       ion-input {
+//         border-bottom: 1px #ccc;
+//         border-bottom-style: solid;
+//       }
+//     }
+//     ion-item:nth-child(2) {
+//       margin-top: 15px;
+//     }
+//   }
+//   .btn-group {
+//     margin-top: 20px;
+//     .login-btn {
+//       width: 100%;
+//       height: 40px;
+//       --background: #094c54;
+//       --box-shadow: none;
+//       margin-top: 20px;
+//       .text {
+//         color: #ffffff;
+//         font-size: 16px;
+//       }
+//     }
+//     .fb-btn {
+//       --background: #4267b2;
+//       width: 100%;
+//       height: 40px;
+//       --box-shadow: none;
+//       ion-icon {
+//         padding: 5px;
+//       }
+//       .text {
+//         color: white;
+//         font-size: 16px;
+//       }
+//     }
+//   }
+//   .signup{
+//       text-align: center;
+//   }
+// }
+
+
+// .content{
+//   --background : #a9284f;
+// }
+.form1{
+    height: 60%;
+    // background : #3880ff;
+    // margin-top: 30%;
+    // padding: 15px;
+  }
+  .form2{
+    height: 30%;
+    // background: white;
+  }
+  ion-card{
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 19px;
+    height: 394px;
+    margin-top: -100px;
+    background: #eff0f1;
+    // height: 458px;
+    //   margin-top: -238px;
+    //   background-color: white;
+  
+  }
+  // .login-input{
+  //   background-color: transparent;
+  // }
+  .item-color{  
+    // margin-top: 5%;
+    --border-radius: 20px;
+      --border-width: 1px 1px 1px 1px;
+      // --border-color : red;
+      // --color : #eff0f1;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  
+  }
+  .rememberme {
+    font-size: 14px;
+    color: #707070;
+    text-align: right;
+  }
+  ion-toggle {
+    // --background: blue;
+    --background-checked: #669bf5;
+    // --handle-background: green;
+    --handle-background-checked: #3880ff;
+  }
+  .login-btn{
+    --background : #3880ff;
+    margin: 20px;
+    --border-radius : 13px;
+  }
+  .username{
+    color:#091f44;
+    // margin-left: 3%;
+  }
+  // .icons {
+  //   color: rgb(233, 224, 224);
+  //   height: 30px;
+  //   width: 30px;
+  //   padding: 5px 15px 5px 0px;
+  // }
+  // ion-card{
+  //   height: 70%;
+  //   --background : white;
+  // }

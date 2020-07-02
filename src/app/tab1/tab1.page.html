@@ -1,0 +1,325 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Маркет</ion-title>
+    <!-- <ion-button slot="end" (click)="popNotification($event)"> -->
+
+    <ion-icon slot="end" style="margin-right: 7px;
+      zoom: 1.5;" name="notifications" (click)="popNotification($event)"></ion-icon>
+    <!-- </ion-button> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-searchbar placeholder="sdks" (ionFocus)="onInput($event)" (ionCancel)="cancel()"></ion-searchbar> -->
+  <ion-item lines='none'>
+    <ion-label>Ангиллаар харах</ion-label>
+    <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="brown">Автомашин</ion-select-option>
+      <ion-select-option value="blonde">Тавилга</ion-select-option>
+      <ion-select-option value="black">Компьютер</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <!-- <ion-item lines='none'>
+    <ion-label>Эрэмбээр харах</ion-label>
+    <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="brown">Үнийн дүн /өсөх/</ion-select-option>
+      <ion-select-option value="blonde">Үнийн дүн /буурах/</ion-select-option>
+      <ion-select-option value="black">Үсгийн дарааллаар</ion-select-option>
+    </ion-select>
+  </ion-item> -->
+  <ion-segment (ionChange)="segmentChanged($event)" color="secondary" [(ngModel)]="segment">
+    <ion-segment-button value="1">
+      <ion-label>Бэлэн</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>Тун удахгүй</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'1'">
+      <ion-row>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;">
+            <img style="height: 100px;"
+              src="https://dev.veritech.mn/storage/uploads/process/file_1583988296562212_15813863674511.jpg">
+            <p>Toyota Land Cruiser</p>
+            <p style="font-weight: bold;">200 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="4" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;">
+            <img style="height: 100px;"
+              src="https://dev.veritech.mn/storage/uploads/process/file_1583988296562212_15813863674511.jpg">
+            <p>Toyota Land Cruiser</p>
+            <p style="font-weight: bold;">200 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="5" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;"
+              src="https://avplay.eu/images/thumbnails/525/525/detailed/3/av-play_laptop_1k83-vm.jpg">
+            <p>AVPLAY 15,6 INCH LAPTOP</p>
+            <p style="font-weight: bold;">11 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="4" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;"
+              src="https://cdn3.shoppy.mn/spree/images/469034/large/open-uri20190312-104258-ffmwmu.">
+            <p>Philips Индүү GC2145/20 </p>
+            <p style="font-weight: bold;">109 мянга</p>
+            <ion-rating style="margin-left: -4px;" rate="5" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;" src="https://cdn.mos.cms.futurecdn.net/TJDYpZN3r8B7onh2imuNah-650-80.jpg.webp">
+            <p>SAMSUNG GALAXY NOTE 10 PLUS</p>
+            <p style="font-weight: bold;">5 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="4" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;" src="https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7-pro.jpg">
+            <p>Xiaomi Redmi Note 7 Pro</p>
+            <p style="font-weight: bold;">8 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="5" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;"
+              src="https://mobileimages.lowes.com/product/converted/883049/883049464336.jpg?size=xl">
+            <p>Whirlpool 26.8-cu ft French Door Refrigerator</p>
+            <p style="font-weight: bold;">20 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="4" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;" src="https://cdn3.shoppy.mn/spree/images/534336/large/wow-1.jpg">
+            <p>Homeconcept Ханын стенка</p>
+            <p style="font-weight: bold;">449 мянга</p>
+            <ion-rating style="margin-left: -4px;" rate="5" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;"
+              src="https://dev.veritech.mn/storage/uploads/process/file_1583988296562212_15813863674511.jpg">
+            <p>Toyota Land Cruiser</p>
+            <p style="font-weight: bold;">200 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="4" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;"
+              src="https://cdn.jdpower.com/JDPower/legacy_files/pictures/jdpower/7f88e7370a0a000201b00766cb84b936.JPG">
+            <p>2013 Nissan 370Z
+            </p>
+            <p style="font-weight: bold;">200 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="5" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;height: 237px;">
+            <img style="height: 100px;" src="https://cf.shopee.sg/file/2d7906c34e44c670f94f1a7fb54f0c7a">
+            <p>Samsung Washing Machine</p>
+            <p style="font-weight: bold;">SGD 700.00</p>
+            <ion-rating style="margin-left: -4px;" rate="4" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card (click)="detail()" style="padding-top: 5px;padding-left: 5px;padding-right: 5px;
+      width: 152px;
+      border-radius: 15px;margin-bottom: 0px;text-align: center;">
+            <img style="height: 100px;"
+              src="https://dev.veritech.mn/storage/uploads/process/file_1583988296562212_15813863674511.jpg">
+            <p>Toyota Land Cruiser</p>
+            <p style="font-weight: bold;">200 сая</p>
+            <ion-rating style="margin-left: -4px;" rate="5" readonly="false" size="small"
+              (rateChange)="onRateChange($event)">
+            </ion-rating>
+            <!-- <ion-item lines="full" (click)="appRating()">
+          <ion-icon name="star-half" slot="start" color="danger"></ion-icon>
+          Rate Us
+        </ion-item> -->
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button class="fab">
+          <ion-icon name="search" (click)="search()"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+    <div *ngSwitchCase="'2'">
+        <ion-card>
+          <ion-slides pager="true">
+
+            <ion-slide>
+<img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/sentra/Vehicle%20Profile%20Assets/2020/model-2020-sentra-sr-superblack.png.ximg.l_4_m.smart.png" />
+              
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/altima/Vehicle%20Profile%20Assets/2020/grade-2020-altima-fwd-platinum-vct-nbl.png.ximg.l_4_m.smart.png">
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/maxima/a36/0_all_new/Vehicle%20Profile%20Assets/2020/model-2020-maxima-platinum-carnelianred.png.ximg.l_4_m.smart.png">
+
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/versa_sedan/Vehicle%20Profile%20Assets/2020/model-2020-versa-sr-superblack.png.ximg.l_4_m.smart.png">
+
+            </ion-slide>
+    
+          </ion-slides>
+          <ion-card-header>
+            <ion-card-subtitle>Sentra</ion-card-subtitle>
+            <ion-card-title>STARTING MSRP</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-slides pager="true">
+            <ion-slide>
+<img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/kicks/2020/overview/2020-nissan-kicks.jpg" />
+              
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/rogue_sport/2020/overview/2020-rogue-sport.jpg">
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/maxima/a36/0_all_new/Vehicle%20Profile%20Assets/2020/model-2020-maxima-platinum-carnelianred.png.ximg.l_4_m.smart.png">
+
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/versa_sedan/Vehicle%20Profile%20Assets/2020/model-2020-versa-sr-superblack.png.ximg.l_4_m.smart.png">
+
+            </ion-slide>
+    
+          </ion-slides>
+          <ion-card-header>
+            <ion-card-subtitle>2020 Nissan Rogue Sport</ion-card-subtitle>
+            <ion-card-title>Street-savvy, road-trip ready</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Rogue Sport's 2.0-L 4-cyl. engine gives you up to 28 MPG combined to keep you on the road and away from the pump. And with 141-hp and 147 lb-ft of torque, it wont be pulling any punches. 
+          </ion-card-content>
+        </ion-card>
+    </div>
+  </div>
+
+</ion-content>

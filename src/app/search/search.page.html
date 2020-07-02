@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Хайлт</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <ion-row>
+    <ion-col size="6"> 
+      <ion-item>
+        <ion-label position="stacked">Доод үнэ</ion-label>
+      <ion-input placeholder="₮"></ion-input>
+      </ion-item>
+      
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="stacked">Дээд үнэ</ion-label>
+        <ion-input placeholder="₮"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6"> 
+      <ion-item>
+        <ion-label>Брэнд</ion-label>
+        <ion-select >
+          <ion-select-option value="f">Toyota</ion-select-option>
+          <ion-select-option value="m">Nissan Lexus  Mercedesbenz</ion-select-option>
+          <ion-select-option value="m">Lexus </ion-select-option>
+          <ion-select-option value="m">Mercedesbenz</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label>Марк</ion-label>
+        <ion-select >
+          <ion-select-option value="f">Toyota Land Cruiser 200 V8</ion-select-option>
+          <ion-select-option value="m">Mercedesbenz G-Class</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label>Хөдөлгүүр</ion-label>
+        <ion-select >
+          <ion-select-option value="f">Tesla</ion-select-option>
+          <ion-select-option value="m">Hybrid</ion-select-option>
+          <ion-select-option value="m">Diesel</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label>Үйлдвэрлэсэн он</ion-label>
+        <ion-select >
+          <ion-select-option value="f">2012-2015</ion-select-option>
+          <ion-select-option value="m">2015-2018</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+
+    </ion-col>
+    <ion-col size="6">
+
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+
+    </ion-col>
+    <ion-col size="6">
+
+    </ion-col>
+  </ion-row>
+  <ion-button expand="block" (click)="search()">Хайх
+    <ion-icon name="search" style="margin-left: 10px;"></ion-icon>
+  </ion-button>
+</ion-card>
+</ion-content>
